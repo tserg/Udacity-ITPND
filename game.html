@@ -1,0 +1,49 @@
+<!DOCTYPE html> <!-- The DOCTYPE tells the browser what kind of document this is (HTML) -->
+
+<html lang="en">
+
+<head> <!-- The head tag includes important information about the page -->
+	<meta charset="UTF-8"> <!-- This line defines something called "character encoding"
+  This will allow the browser to display certain characters (such as non-Roman letters) correctly.
+  You should include this line in the head of all of your webpages. -->
+
+ 	<title>Memory Game</title> <!-- This is the title of your page (what appears in the name of a browser tab) -->
+
+ 	<link rel="stylesheet" href="style.css"> <!-- This line links your CSS stylesheet to your HTML (see Lesson 1.3) -->
+	
+</head>
+
+<body>
+
+	<script type="text/javascript" src="script.js"></script>
+
+	<h1>Matching Game</h1>
+
+	<div class = "menu_bar">
+
+		<span id="moves" class ="menu_items">Moves: 0</span> <!-- dynamic click counter that will be called in script.js -->
+		<span id="stars" class = "menu_items">Stars: ***</span> <!-- dynamic stars counter that will be called in script.js -->
+		<span id="reset" class = "menu_items"><button onclick="reset()">Restart</button></span> <!-- refresh button -->
+
+	</div>
+
+
+	<div class = "main_game" id = "master_box">
+
+
+	</div>
+
+
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+		<span class="close" id = "close_button">&times;</span>
+		<p>Congratulations!</p>
+		<p id = "player_stats"></p>
+		<p id = "restart"><button onclick="restart()">Play again!</button></p>
+
+	</div>
+
+</body>
+</html>

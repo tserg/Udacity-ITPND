@@ -1,0 +1,114 @@
+/* This is the CSS file for the memory game 
+
+*/
+
+* {
+	/* for resizing of image: https://stackoverflow.com/questions/3029422/how-do-i-auto-resize-an-image-to-fit-a-div-container */
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+} 
+
+body {
+	text-align: center;
+	font-family: Verdana, sans-serif;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.menu_bar {
+
+	/* https://stackoverflow.com/questions/7245018/how-to-evenly-distribute-elements-in-a-div-next-to-each-other */
+
+	display: table;
+	width:600px;
+	margin: auto;
+	table-layout: fixed;
+	margin-bottom: 10px;
+}
+
+.menu_items {
+    display:table-cell;
+    text-align:center;
+}
+
+
+.main_game {
+	margin:auto;
+	width: 600px;
+	height: 600px;
+	background-color: gray; 
+}
+
+.boxes {
+	margin:20px;
+	width:100px;
+	height:100px;
+	display:inline-flex;
+}
+
+.game_image {
+	position:absolute;
+	height:100px;
+	width:100px;
+	display:block;
+}
+
+.cover_image {
+	position:absolute;
+	height:100px;
+	width:100px;
+	display:block;
+}
+
+.cover_image_hidden_ {
+	position:absolute;
+	height:100px;
+	width:100px;
+	display:none;
+}
+
+/* code for modal: https://www.w3schools.com/howto/howto_css_modals.asp*/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
